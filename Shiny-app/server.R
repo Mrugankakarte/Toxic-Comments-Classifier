@@ -2,7 +2,7 @@ library(shiny)
 library(keras)
 library(flexdashboard)
 
-source("Data/prediction.R")
+source("prediction.R")
 
 s = c(0, 0.4)
 w = c(0.4, 0.8)
