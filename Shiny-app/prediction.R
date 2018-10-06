@@ -1,7 +1,7 @@
 library(keras)
 
 model <- load_model_hdf5("Data/keras_model.h5", compile = F)
-load_model_weights_hdf5(model, "Data/keras_model_weights.h5")
+#load_model_weights_hdf5(model, "Data/keras_model_weights.h5")                #not required...load_model_hdf5() loads the weights along with model
 tokenizer <- load_text_tokenizer(filename = "Data/keras_text_tokenizer")
 maxlen = 150
 label = c('toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate')
